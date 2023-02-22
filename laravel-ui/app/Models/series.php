@@ -5,7 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class series extends Model
+class Series extends Model
 {
     use HasFactory;
+
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+    ];
+
+    protected $fillable = [
+        'title',
+        'seasons',
+        'episodes',
+        'release_date',
+    ];
 }

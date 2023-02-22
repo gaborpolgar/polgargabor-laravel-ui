@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\series;
-use App\Http\Requests\StoreseriesRequest;
-use App\Http\Requests\UpdateseriesRequest;
+use App\Models\Series;
+use App\Http\Requests\StoreSeriesRequest;
+use App\Http\Requests\UpdateSeriesRequest;
 
 class SeriesController extends Controller
 {
@@ -31,10 +31,10 @@ class SeriesController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreseriesRequest  $request
+     * @param  \App\Http\Requests\StoreSeriesRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreseriesRequest $request)
+    public function store(StoreSeriesRequest $request)
     {
         //
     }

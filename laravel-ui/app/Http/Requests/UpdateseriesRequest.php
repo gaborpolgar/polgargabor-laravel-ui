@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateseriesRequest extends FormRequest
+class UpdateSeriesRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,10 @@ class UpdateseriesRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            "title" => "string|max:255",
+            "seasons" => "string|max:255",
+            "episodes" => "string|max:255",
+            "release_date" => "date"
         ];
     }
 }
