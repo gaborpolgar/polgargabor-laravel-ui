@@ -17,9 +17,10 @@ class SeriesFactory extends Factory
     public function definition()
     {
         return [
-   /*          "title" => ,
-            "seasons" =>
-            "release_date" => */
+            "title" => fake()->words(3, true),
+            "seasons" => fake()->randomDigit(),
+            "episodes" => fake()->numberBetween(6, 60),
+            "release_date" => fake()->dateTimeBetween("-5 years", "-2 years"),
         ];
     }
 }

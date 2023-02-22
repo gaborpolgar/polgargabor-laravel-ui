@@ -15,8 +15,9 @@ return new class extends Migration
     {
         Schema::create('series', function (Blueprint $table) {
             $table->id();
-            $table->string("title")->unique();
-            $table->integer("seasons")->nullable();
+            $table->string("title");
+            $table->string("seasons");
+            $table->string("episodes");
             $table->timestamps();
             $table->date("release_date");
         });
